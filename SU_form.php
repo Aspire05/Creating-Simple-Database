@@ -18,7 +18,7 @@ $checkrow = $checkrow->num_rows;
 
      $sql = "INSERT INTO users (username,password) VALUES ('$username','$password')";
     mysqli_query($conn, $sql);
-    echo '<script type="text/javascript">alert("user successfully signed up... log in your account now!s"); window.location="index.php";</script>';
+    echo '<script type="text/javascript">alert("user successfully signed up... log in your account now!"); window.location="index.php";</script>';
 }
 }
 

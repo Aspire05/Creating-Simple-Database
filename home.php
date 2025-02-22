@@ -34,7 +34,7 @@ table{
     text-align: center;
     display: table;
     border: 1px solid black;
-    width: 100%;
+    width: 75%;
 }
 .table-container {
 
@@ -44,15 +44,15 @@ table{
     text-align: center;
     margin: 0;
     width: 1000px;
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-size: 24px;
 }
 tr{
     border: 5px solid black;
-    padding: 20px;
+    padding: 10px;
     margin: 50px;
     height: 10vh;
-    width: 1000px;
+    width: 100px;
 }
 
 
@@ -107,12 +107,11 @@ a {
     <a href="logout.php"><p>Logout</p></a>
     <center><strong>Add Another User Here:</strong>
         <br>
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
     <input type="text" name="brand" placeholder="brand">
     <input type="text" name="type" placeholder="type">
     <input type="text" name="price" placeholder="price">
     <input type="text" name="stocks" placeholder="stocks">
+    <br>
     <input class="button" type="submit" name="insert" value="ADD">
 </form>
 <br>
@@ -121,21 +120,12 @@ a {
 <div class="table-container">
 <table>
       <thead>
-        <br>
         <th>ID</th>
-        <br>
-        <th>Username</th>
-        <br>
-        <th>Password</th>
-        <br>
         <th>Brand</th>
-        <br>
         <th>Type</th>
-        <br>
         <th>Price</th>
-        <br>
         <th>Stocks</th>
-        <br>
+        
       </thead>
 
 <tbody>
@@ -150,8 +140,6 @@ a {
       ?>
       <tr>
         <td><?php echo$row['id'] ?></td>
-        <td><?php echo$row['username'] ?></td>
-        <td><?php echo$row['password'] ?></td>
         <td><?php echo$row['brand'] ?></td>
         <td><?php echo$row['type'] ?></td>
         <td><?php echo$row['price'] ?></td>
